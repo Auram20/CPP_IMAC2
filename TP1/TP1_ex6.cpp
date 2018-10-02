@@ -10,7 +10,7 @@
 namespace TP_CPP_IMAC2
 {
 
-	int meanCopy(std::vector<int> myvec)
+	int meanCopy(const std::vector<int> myvec)
 	{
 		Chrono chrono;
 		chrono.start();
@@ -27,7 +27,7 @@ namespace TP_CPP_IMAC2
 		return 0;
 	}
 
-	int mean(std::vector<int> &myvec)
+	int mean(const std::vector<int> &myvec)
 	{
 		Chrono chrono;
 		chrono.start();
@@ -78,6 +78,15 @@ namespace TP_CPP_IMAC2
 		// v.erase(v.back)
 
 		// v.clear() // Pour vider le vecteur 
+
+
+
+
+
+
+
+
+
 
 		return 0;
 	}
