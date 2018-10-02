@@ -1,4 +1,7 @@
-
+// ================================
+// POO C++ - IMAC 2
+// TP 1 - Exercice 3- ANIK Myriam
+// ================================
 #include <iostream>
 #include <string>
 		
