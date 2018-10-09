@@ -11,12 +11,23 @@ int main()
 {
 
 	VectorD vec(3);
-	vec.m_data[0]=1;
-	vec.m_data[1]=1;
-	vec.m_data[2]=1;
+	
+	vec.setValue(0,1);
+	vec.setValue(1,1);
+	vec.setValue(2,1);
 
+	VectorD vec2(3);
 
-	VectorD vec2(vec);
+	vec2.setValue(0,2);
+	vec2.setValue(1,2);
+	vec2.setValue(2,2);
+
+	VectorD vec3=vec.operator+(vec2);
+
+	vec3.saveFile();
+
+	// std::cout << vec.size() << std::endl ;
+	std::cout << "L'élément demandé " << vec3.getValue(1) << std::endl ;
 
 	return 0;
 }
