@@ -11,7 +11,7 @@
 
 class Rectangle {
 	
-	private:
+	protected:
 	double largeur;
 	double hauteur;
 	
@@ -25,6 +25,8 @@ class Rectangle {
 	void setHauteur(double h);
 	double surface() const;
 };
+
+
 
 
 #endif 

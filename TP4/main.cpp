@@ -5,6 +5,7 @@
 
 
 #include "Rectangle.hpp"
+#include "Carre.hpp"
 #include<iostream>
 
 int main()
@@ -14,5 +15,11 @@ int main()
 	std::cout << r1.surface() << std::endl;
 	r1.setLargeur(3.9);
 	std::cout << r1.getLargeur() << std::endl;
+
+
+	Carre c1(3), c2;
+	std::cout << c1.surface() << std::endl;
+	c2.setCote(2.9);
+ 	
  	return 0;
 }
