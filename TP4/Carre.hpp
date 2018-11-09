@@ -12,18 +12,19 @@
 
 class Carre : public Rectangle {
 	
-	private:
-	double cote;
 
 	public:
 	Carre() : Rectangle() {};
+	~Carre();
 	//		  setHauteur(cote),
 	//		  setLargeur(cote);
 
+	public:
 	Carre(double c);
 	void setCote(double c);
-
-	};
+	virtual void quiSuisJe() const;
+	
+};
 
 
 

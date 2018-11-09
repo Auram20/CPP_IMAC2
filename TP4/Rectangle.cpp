@@ -16,6 +16,10 @@ Rectangle::Rectangle(double l, double h)
 }
 
 
+// Détruire un Rectangle
+Rectangle::~Rectangle()
+{
+}; 
 
 double Rectangle::getLargeur() const
 {
@@ -42,4 +46,9 @@ void Rectangle::setHauteur(double h)
 double Rectangle::surface() const
 {
 	return largeur*hauteur;
+}
+
+void Rectangle::quiSuisJe() const
+{
+	std::cout << "Je suis un rectangle" << std::endl;
 }

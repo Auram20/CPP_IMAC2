@@ -19,11 +19,13 @@ class Rectangle {
 	public:
 	Rectangle( )= default;
 	Rectangle(double l, double h);
+	~Rectangle(); 
 	double getLargeur() const;
 	double getHauteur() const;
 	void setLargeur(double l);
 	void setHauteur(double h);
 	double surface() const;
+	virtual void quiSuisJe() const;
 };
 
 

@@ -10,6 +10,11 @@
 
 
 
+// Détruire un Carre
+Carre::~Carre()
+{
+}; 
+
 
 Carre::Carre(double c) : Rectangle(c,c)
 {
@@ -21,5 +26,10 @@ void Carre::setCote (double c)
 {
 	hauteur=c;
 	largeur=c;
+}
+
+void Carre::quiSuisJe() const
+{
+	std::cout << "Je suis un carre" << std::endl;
 }
 
