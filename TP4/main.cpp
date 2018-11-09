@@ -6,6 +6,7 @@
 
 #include "Rectangle.hpp"
 #include "Carre.hpp"
+#include "Ellipse.hpp"
 #include<iostream>
 
 
@@ -29,5 +30,9 @@ int main()
 	c2.setCote(2.9);
 	presenter(c1);
  	
+
+ 	Ellipse e1(2,4), e2;
+ 	std::cout << e1.surface() << std::endl;
+
  	return 0;
 }
