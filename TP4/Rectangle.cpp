@@ -50,5 +50,5 @@ double Rectangle::surface() const
 
 void Rectangle::quiSuisJe() const
 {
-	std::cout << "Je suis un rectangle" << std::endl;
+	std::cout << "Je suis un Rectangle" << std::endl;
 }

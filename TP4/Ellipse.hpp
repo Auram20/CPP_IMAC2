@@ -7,9 +7,11 @@
 #define ELLIPSE_HPP__
 
 #include<iostream>
+#include "Figure.hpp"
 
 
-class Ellipse {
+
+class Ellipse : public Figure{
 	
 	protected:
 	double smallRay;
@@ -17,7 +19,7 @@ class Ellipse {
 		
 
 	public:
-	Ellipse( )= default;
+	Ellipse() = default;
 	Ellipse(double l, double h);
 	~Ellipse(); 
 	

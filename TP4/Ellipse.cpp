@@ -50,5 +50,5 @@ double Ellipse::surface() const
 
 void Ellipse::quiSuisJe() const
 {
-	std::cout << "Je suis une ellipse" << std::endl;
+	std::cout << "Je suis une Ellipse" << std::endl;
 }

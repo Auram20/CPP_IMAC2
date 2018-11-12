@@ -30,6 +30,6 @@ void Carre::setCote (double c)
 
 void Carre::quiSuisJe() const
 {
-	std::cout << "Je suis un carre" << std::endl;
+	std::cout << "Je suis un Carre" << std::endl;
 }
 

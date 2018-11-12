@@ -7,9 +7,10 @@
 #define RECTANGLE_HPP__
 
 #include<iostream>
+#include "Figure.hpp"
 
 
-class Rectangle {
+class Rectangle : public Figure{
 	
 	protected:
 	double largeur;
@@ -17,7 +18,7 @@ class Rectangle {
 	
 
 	public:
-	Rectangle( )= default;
+	Rectangle() = default;
 	Rectangle(double l, double h);
 	~Rectangle(); 
 	double getLargeur() const;
