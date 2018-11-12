@@ -17,6 +17,7 @@ class Figure {
 	Figure( )= default;
 	~Figure(); 
 	virtual void quiSuisJe() const;
+	virtual double surface() const =0;
 };
 
 

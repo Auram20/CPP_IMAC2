@@ -9,8 +9,8 @@
 #include "Ellipse.hpp"
 #include "Cercle.hpp"
 #include "Figure.hpp"
-#include<iostream>
-
+#include <iostream>
+#include <vector>
 
 void presenter(Figure const &f)
 {
@@ -45,13 +45,25 @@ int main()
 	// On fait les tests de la question 8 
 
 	Rectangle r3;
-//	Rectangle r4 = Carre(8); // Un Carré est un rectangle donc cette déclaration marche. 
+	Rectangle r4 = Carre(8); // Un Carré est un rectangle donc cette déclaration marche. 
 //	Rectangle r4 = Cercle(8); // Aucune raison que ça marche un Cercle n'est pas un Rectangle. 
 //	Carre r4=r3; // On ne peut pas affecter à un objet sous classe, un objet superclasse. On ne peut pas créer un carré et dire que c'est un Rectangle. Un rectangle est un carré mais un carré n'est pas un rectangle forcement.  
 	std::cout << r4.getLargeur() << std::endl;
 	std::cout << r4.getHauteur() << std::endl;
 	
 
+	// Question 10 
+	std::vector<Figure *> monvecteur;
+	monvecteur.push_back(&c1);
+	monvecteur.push_back(&e1);
+	monvecteur.push_back(&r1);
+	monvecteur.push_back(&ce1);
+
+	for (size_t i=0; i<monvecteur.size(); i++)
+		{
+			presenter(*(monvecteur[i]));
+			std::cout << (*(monvecteur[i])).surface() << std::endl ; 	
+		}
 
 
  	return 0;
