@@ -3,7 +3,7 @@
 
 #include "ioPPM.hpp"
 
-int readPPM(const std::string &filename, ImageRGBU8 & image) {	
+int readPPM(const std::string &filename, ImageRGBu8 &image) {	
 
 	// open file
 	std::ifstream file(filename, std::ifstream::in);
@@ -47,13 +47,13 @@ int readPPM(const std::string &filename, ImageRGBU8 & image) {
 	file.close();
 
 	// buld the image from the data
-	image = ImageRGBU8(w,h,dataVector);
+	image = ImageRGBu8(w,h,dataVector);
 
 	return EXIT_SUCCESS;
 }
 
 
-int writePPM(const std::string &filename, const ImageRGBU8 & image) {	
+int writePPM(const std::string &filename, const ImageRGBu8 &image) {	
 
 	// open the file
 	std::ofstream file(filename, std::ofstream::out);

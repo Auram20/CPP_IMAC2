@@ -3,7 +3,7 @@
 // TP 4 - Exercice 1
 // ================================
 
-#include "ImagesRGBU8.hpp"
+#include "ImageRGBU8.hpp"
 #include <vector> 
 
  
