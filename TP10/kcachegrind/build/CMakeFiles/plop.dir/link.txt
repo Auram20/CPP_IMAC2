@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g   CMakeFiles/plop.dir/src/main.cpp.o  -o plop -rdynamic 
