@@ -1,13 +1,12 @@
+// ================================
+// POO C++ - IMAC 2
+// TP 5 
+// ANIK Myriam
+// ================================
+
 #include "Filters.hpp"
 #include "Filter.hpp"
 #include <iostream>
-
-// Constructeurs
-// Filters::Filters() {
-// 	_size = 0;
-// 	_nbFilters = 0;
-// 	_filters = new Filter*[0];
-// }
 
 
 Filters::Filters(const int n) {
@@ -22,9 +21,8 @@ Filters::~Filters() {
 }
 
 
-// Méthodes sur les filtres
+// Méthodes filtres
 
-// Ajout d'un filtre : On ajoute le nouveau filtre au tableau _filters, puis on incrémente _nbFilters
 void Filters::addFilter(Filter &filter) {
 	_filters[_nbFilters] = &filter;
 	_nbFilters++;

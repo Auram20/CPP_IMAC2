@@ -1,3 +1,10 @@
+// ================================
+// POO C++ - IMAC 2
+// TP 5 
+// ANIK Myriam
+// ================================
+
+
 #ifndef __ImageRGBu8__HPP
 #define __ImageRGBu8__HPP
 

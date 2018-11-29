@@ -1,7 +1,13 @@
+// ================================
+// POO C++ - IMAC 2
+// TP 5 
+// ANIK Myriam
+// ================================
+
 #ifndef __FILTER__HPP
 #define __FILTER__HPP
 
-#include "ImageRGBu8.hpp"
+#include "ImageRGBU8.hpp"
 
 class Filter
 {

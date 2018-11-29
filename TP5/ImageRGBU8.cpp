@@ -1,4 +1,11 @@
-#include "ImageRGBu8.hpp"
+// ================================
+// POO C++ - IMAC 2
+// TP 5 
+// ANIK Myriam
+// ================================
+
+
+#include "ImageRGBU8.hpp"
 #include <algorithm>
 
 // Constructeurs
@@ -31,12 +38,3 @@ void ImageRGBu8::greyscale() {
 		_data[i] = _data[i+1] = _data[i+2] = moy;
 	}
 }
-
-// void ImageRGBu8::circle(const unsigned char r = 255, const unsigned char g = 0, const unsigned char b = 0) {
-// 	float moy;
-// 	for (unsigned int i = 0; i < _width * _height * 3; i+=3)
-// 	{
-// 		moy = (_data[i] +_data[i+1] +_data[i+2]) / 3;
-// 		_data[i] = _data[i+1] = _data[i+2] = moy;
-// 	}
-// }

@@ -1,17 +1,22 @@
+// ================================
+// POO C++ - IMAC 2
+// TP 5 
+// ANIK Myriam
+// ================================
+
 #ifndef __REMOVE_CHANNEL__HPP
 #define __REMOVE_CHANNEL__HPP
 
-#include "ImageRGBu8.hpp"
 #include "Filter.hpp"
 
 class RemoveChannel : public Filter
 {
 	private:
-		unsigned int _channel; // 0: red, 1: green, 2: blue
+		unsigned int _channel; // 0: R, 1: G, 2: B
 
 	public:
-		RemoveChannel();
-		RemoveChannel(const unsigned int c);
+		RemoveChannel(); // Const
+		RemoveChannel(const unsigned int c); // Const 
 		~RemoveChannel();
 		void applyFilter(ImageRGBu8 &ImageRGBU8);
 };

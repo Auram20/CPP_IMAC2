@@ -1,7 +1,13 @@
+// ================================
+// POO C++ - IMAC 2
+// TP 5 
+// ANIK Myriam
+// ================================
+
+
 #ifndef __THRESHOLD__HPP
 #define __THRESHOLD__HPP
 
-#include "ImageRGBu8.hpp"
 #include "Filter.hpp"
 
 class Threshold : public Filter

@@ -1,8 +1,14 @@
+// ================================
+// POO C++ - IMAC 2
+// TP 5 
+// ANIK Myriam
+// ================================
+
 #include <iostream>
 #include <string>
 #include <fstream>
 
-#include "ImageRGBu8.hpp"
+#include "ImageRGBU8.hpp"
 #ifndef __IOPPM__HPP
 #define __IOPPM__HPP
 
