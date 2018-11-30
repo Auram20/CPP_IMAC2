@@ -1,7 +1,7 @@
 
 // ================================
 // POO C++ - IMAC 2
-// TP 6 
+// TP 5 - Exercice 3 
 // ANIK Myriam
 // ================================
 
@@ -12,11 +12,11 @@
 
 
 // Constructeur par liste d'initialisation
-Erreur::Erreur(int level, int code, const char * string, int line, const char *file) : errLevel(level), errCode(code), errString(string), errLine(line), errFile(file)
+Erreur::Erreur(int level, int code, const char * string) : errLevel(level), errCode(code), errString(string)
 {};
 
 // Constructeur par défaut
-Erreur::Erreur() : errLevel(0), errCode(0), errString(""), errLine(0), errFile("")
+Erreur::Erreur() : errLevel(0), errCode(0), errString("")
 {};
 
 

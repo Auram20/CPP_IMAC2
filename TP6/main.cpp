@@ -1,7 +1,7 @@
 
 // ================================
 // POO C++ - IMAC 2
-// TP 5 - Exercice 1 à 3 
+// TP 6 
 // ANIK Myriam
 // ================================
 
@@ -106,7 +106,7 @@ int main(int argc, char const *argv[])
 
 
 
-// -------------------- CLASSE ERROR   --------------------------
+// -------------------- CLASSE ERROR  + Version Updated de l'erreur --------------------------
 
 int main(int argc, char const *argv[])
 {
@@ -119,7 +119,7 @@ int main(int argc, char const *argv[])
 	try 
 		{
 			if (b==0)
-				throw Erreur(1,444,"divisionNul");
+				throw Erreur(1,444,"divisionNul",__LINE__,(const char*)__FILE__);
 			else
 				std::cout <<"a/b = " <<  a/b << std::endl;
 			// 	Exception en point flottant - La division par 0 ne passe pas à l'exécution
@@ -131,6 +131,8 @@ int main(int argc, char const *argv[])
 		std::cerr << "Level : " << e.getNiveau() << std::endl;
 		std::cerr << "Code : " << e.getCode() << std::endl;
 		std::cerr << "Description : " <<e.what() << std::endl;
+		std::cerr << "Ligne : " << e.getLine() << std::endl;
+		std::cerr << "Fichier : " << e.getFile() << std::endl;		
 	}
 
 	std::cout <<"a/5 = " <<  a/5 << std::endl;
